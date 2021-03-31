@@ -1,0 +1,64 @@
+print('             <<< GOOD DOG LANCHES >>>')
+print()
+print('< C A R D Á P I O >')
+print()
+print('================================================')
+print('|Código |' 'Produto' '             |Preço Unitário |')
+print('================================================')
+print('|1      |' 'Misto Quente' '        |R$ 4,00        |')
+print('|2      |' 'Cheeseburguer' '       |R$ 6,00        |')
+print('|3      |' 'Hot Dog Simples' '     |R$ 7,50        |')
+print('|4      |' 'X-Bacon' '             |R$ 8,00        |')
+print('|5      |' 'Hot Dog Tradicional' ' |R$ 8,00        |')
+print('|6      |' 'Refrigerante 2L' '     |R$ 8,00        |')
+print('================================================')
+
+try:
+    codigo = int(input('> Digite o Código ...: '))
+    while codigo < 1 or codigo > 6:
+        codigo = int(input('Digite um Código Válido: '))
+
+    quantidade = int(input('> Digite a Quantidade: '))
+    while quantidade < 1:
+        quantidade = int(input('Digite uma Quantidade Válida: '))
+except ValueError:
+    print('<<< Esse Código Não Existe!! >>>')
+    quit()
+
+print('================================================')
+print('             >>> PEDIDO FINAL <<<')
+print()
+
+if codigo == 1:
+    print(f'> Misto Quente: {quantidade} x R$ 4,00')
+    print('================================================')
+    print(f'>>> TOTAL À PAGAR: R$ {quantidade*4.00:.2f}')
+
+elif codigo == 2:
+    print(f'> Cheeseburguer: {quantidade} x R$ 6,00')
+    print('================================================')
+    print(f'>>> TOTAL À PAGAR: R$ {quantidade*6.00:.2f}')
+
+elif codigo == 3:
+    print(f'> Hot Dog Simples: {quantidade} x R$ 7,50')
+    print('================================================')
+    print(f'>>> TOTAL À PAGAR: R$ {quantidade*7.50:.2f}')
+
+elif codigo == 4:
+    print(f'> X-Bacon: {quantidade} x R$ 8,00')
+    print('================================================')
+    print(f'>>> TOTAL À PAGAR: R$ {quantidade*8.00:.2f}')
+
+elif codigo == 5:
+    print(f'> Hot Dog Tradicional: {quantidade} x R$ 8,00')
+    print('================================================')
+    print(f'>>> TOTAL À PAGAR: R$ {quantidade*8.00:.2f}')
+
+elif codigo == 6:
+    print(f'> Refrigerante 2L: {quantidade} x R$ 8,00')
+    print('================================================')
+    print(f'>>> TOTAL À PAGAR: R$ {quantidade*8.00:.2f}')
+
+print('================================================')
+print()
+print('<<< Agradecemos a Preferência! Feliz Pascoa! >>>')
