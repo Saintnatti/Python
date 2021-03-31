@@ -1,0 +1,9 @@
+print('Conversor Celsius para Fahrenheit')
+print('==================================')
+
+Celsius = float(input('Digite em graus Celsius: ' ))
+
+Fahrenheit = 9 * Celsius / 5 + 32
+
+print()
+print(Celsius, 'graus Celsius correspondem a', Fahrenheit, 'graus Fahrenheit')
