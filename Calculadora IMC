@@ -1,0 +1,28 @@
+print()
+print('Calculadora de IMC')
+print('=============================')
+
+peso = float(input('Digite o seu peso (KG): '))
+print()
+
+altura = float(input('Digite a sua altura (M): '))
+print()
+
+imc = peso / (altura ** 2)
+print(f'O IMC dessa pessoa é de: {imc:.2f}')
+print('=============================')
+
+if imc < 18.5:
+    print('Resultado IMC: Poderia te chamar de Olivia Palito')
+
+elif imc >= 18 and imc < 25:
+    print('Resultado IMC: Pai ta Fitness')
+
+elif imc >= 25 and imc < 30:
+    print('Resultado IMC: Tu ta gordin')
+
+elif imc >= 30 and imc < 40:
+    print('Resultado IMC: Tu ta mais gordo que o Choji de Naruto')
+
+elif imc >= 40:
+    print('Resultado IMC: Tu tem noção que ocupa dois lugares no ônibus?!?!')
