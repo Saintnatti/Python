@@ -1,0 +1,21 @@
+print('Calculadora de Média Ponderada')
+print('===============================')
+
+N1 = float(input('Digite a Nota 1: '))
+print()
+
+N2 = float(input('Digite a Nota 2: '))
+print()
+
+N3 = float(input('Digite a Nota 3: '))
+print()
+
+print(f'A Nota 1 é: {N1}')
+print()
+print(f'A Nota 2 é: {N2}')
+print()
+print(f'A Nota 3 é: {N3}')
+print('===============================')
+
+MP = ((N1 * 0.2) + (N2 * 0.3) + (N3 * 0.5))
+print(f'Média Ponderada é: {MP}')
