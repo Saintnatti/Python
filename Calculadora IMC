@@ -13,16 +13,16 @@ print(f'O IMC dessa pessoa é de: {imc:.2f}')
 print('=============================')
 
 if imc < 18.5:
-    print('Resultado IMC: Poderia te chamar de Olivia Palito')
+    print('Resultado IMC: MAGREZA')
 
 elif imc >= 18 and imc < 25:
-    print('Resultado IMC: Pai ta Fitness')
+    print('Resultado IMC: NORMAL')
 
 elif imc >= 25 and imc < 30:
-    print('Resultado IMC: Tu ta gordin')
+    print('Resultado IMC: SOBREPESO')
 
 elif imc >= 30 and imc < 40:
-    print('Resultado IMC: Tu ta mais gordo que o Choji de Naruto')
+    print('Resultado IMC: OBESIDADE')
 
 elif imc >= 40:
-    print('Resultado IMC: Tu tem noção que ocupa dois lugares no ônibus?!?!')
+    print('Resultado IMC: OBESIDADE GRAVE')
